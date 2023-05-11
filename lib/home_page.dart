@@ -37,15 +37,6 @@ class MyHomePage extends StatelessWidget {
             position: intialLocation,
           ),
         },
-        circles: {
-          Circle(
-            circleId: const CircleId("1"),
-            center: intialLocation,
-            radius: 420,
-            strokeWidth: 2,
-            fillColor: const Color(0xFF006491).withOpacity(0.2),
-          ),
-        },
       ),
     );
   }
