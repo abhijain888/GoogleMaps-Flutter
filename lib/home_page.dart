@@ -46,21 +46,6 @@ class MyHomePage extends StatelessWidget {
             fillColor: const Color(0xFF006491).withOpacity(0.2),
           ),
         },
-        polygons: {
-          Polygon(
-            polygonId: const PolygonId("1"),
-            fillColor: const Color(0xFF006491).withOpacity(0.1),
-            strokeWidth: 2,
-            points: const [
-              LatLng(23.766315, 90.425778),
-              LatLng(23.764691, 90.424767),
-              LatLng(23.761916, 90.426862),
-              LatLng(23.758532, 90.428588),
-              LatLng(23.758825, 90.429228),
-              LatLng(23.763698, 90.431324),
-            ],
-          ),
-        },
       ),
     );
   }
