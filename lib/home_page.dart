@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_google_maps/polylines.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -29,6 +30,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Google Maps"),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const PolylinesMap()),
+              );
+            },
+            icon: const Icon(Icons.arrow_forward_ios_rounded),
+          ),
+        ],
       ),
       body: GoogleMap(
         initialCameraPosition: initialCameraPosition,
